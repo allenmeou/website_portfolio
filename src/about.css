@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  min-height: 100vh;
+}
+.app {
+  position: relative;
+}
+
+p {
+  position: absolute;
+  top: 287px;
+  left: 21%;
+}
+img {
+  position: absolute;
+  width: 240px;
+  height: 302px;
+  margin: 10px;
+}
+
+/* Responsive */
+/* PC */
+@media screen and (min-width: 1024px) {
+  p {
+    margin: 0 50px;
+  }
+}
+
+/* Mobile and Tablet */
+@media screen and (max-width: 1023.98px) {
+  p {
+    margin-right: 50px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  img {
+  }
+  p {
+    right: 21px;
+    left: 50%;
+    bottom: 0;
+  }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  .app {
+    height: 100vh;
+  }
+  img {
+    display: block;
+  }
+  p {
+    display: block;
+    top: unset;
+    left: unset;
+    margin: 10px;
+  }
+}

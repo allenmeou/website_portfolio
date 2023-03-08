@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 97%;
+  position: absolute;
+  display: table;
+}
+
+.app {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  max-width: 560px;
+  max-height: 320px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+/* PC */
+@media screen and (min-width: 1024px) {
+}
+
+/* Mobile and Tablet */
+@media screen and (max-width: 1023.98px) {
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+  img {
+    width: calc(100% - 20px);
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
